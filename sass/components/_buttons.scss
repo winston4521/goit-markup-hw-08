@@ -1,0 +1,118 @@
+%btn {
+  border-radius: 4px;
+  min-width: 73px;
+
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: inherit;
+}
+
+.btn {
+  border-radius: 4px;
+  min-width: 73px;
+
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: inherit;
+}
+.primary__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  min-width: 200px;
+  border: none;
+  padding: 10px 32px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--accent-color);
+  color: var(--white-color);
+
+  @include transitionCubic(box-shadow);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+.secondary {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+
+  background-color: #f5f4fa;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.form-btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 55px;
+
+  width: 200px;
+  height: 50px;
+  border: 0px;
+
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  border-radius: 4px;
+  cursor: pointer;
+  @include transitionCubic(box-shadow);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 50px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  @include transitionCubic(box-shadow);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+

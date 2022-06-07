@@ -1,0 +1,45 @@
+.icon-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  fill: #afb1b8;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: white;
+  }
+}
+
+.icon-submit {
+  margin-left: 10px;
+  fill: currentColor;
+}
+
+.social-block {
+  margin-left: 70px;
+}
+
+.footer-socials {
+  display: flex;
+  margin-top: 20px;
+}
+.icon-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+.fticon {
+  fill: var(--white-color);
+}
+.socials-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}

@@ -1,0 +1,28 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--white-color);
+  color: var(--title-text-color);
+  letter-spacing: 0.03em;
+}
+
+.section {
+  @media screen and (max-width: 1599px) {
+    padding: 60px 15px;
+  }
+  @media screen and (min-width: 1600px) {
+    padding: 94px 0px;
+  }
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  @media screen and (max-width: 1599px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 50px;
+  }
+}
