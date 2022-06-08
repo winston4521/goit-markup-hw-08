@@ -1,5 +1,8 @@
 .our-work {
-  padding-bottom: 94px;
+  @include media(desktop-only) {
+    display: none;
+    padding-bottom: 94px;
+  }
 }
 .work-list {
   display: flex;

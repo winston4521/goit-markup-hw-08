@@ -6,23 +6,27 @@ body {
 }
 
 .section {
-  @media screen and (max-width: 1599px) {
-    padding: 60px 15px;
+  @include media(desktop-only) {
+    padding: 60px 0px;
   }
-  @media screen and (min-width: 1600px) {
+  @include media(desktop) {
     padding: 94px 0px;
   }
 }
 
 .section-title {
-  font-size: 36px;
-  line-height: 1.16;
   text-align: center;
 
-  @media screen and (max-width: 1599px) {
+  font-size: 28px;
+  line-height: 1.17;
+
+  @include media(mobile) {
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 1600px) {
+  @include media(desktop) {
     margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.16;
   }
 }

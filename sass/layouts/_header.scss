@@ -69,7 +69,7 @@
   @include transitionCubic(color);
 }
 .head-nav__link--current::after {
-  content: '';
+  // content: '';
   display: block;
   position: absolute;
   bottom: 0;

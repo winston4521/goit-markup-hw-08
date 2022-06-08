@@ -3,16 +3,15 @@
 }
 
 .img-list {
-  @media screen and (min-width: 1600px) {
+  @include media(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @include media(desktop) {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-
-    margin: -15px;
   }
 }
 
@@ -28,24 +27,24 @@
   flex-wrap: wrap;
   flex-direction: column;
 
-  &:not(:last-child) {
-    @media screen and (min-width: 1600px) {
-      margin-right: 30px;
-    }
-  }
-  @media screen and (min-width: 1600px) {
-    width: 270px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1599px) {
+  @include media(tablet-only) {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
     flex-direction: column;
   }
   &:not(:last-child) {
-    @media screen and (max-width: 767px) {
+    @include media(mobile-only) {
       margin-bottom: 30px;
     }
+  }
+
+  &:not(:last-child) {
+    @include media(desktop) {
+      margin-right: 30px;
+    }
+  }
+  @include media(desktop) {
+    width: 270px;
   }
 }
 

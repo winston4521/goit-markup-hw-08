@@ -74,8 +74,8 @@
           <!-- Form -->
 
           <form class="form">
-            <div class="title__box">
-              <b class="title__box__text">Оставьте свои данные, мы вам перезвоним</b>
+            <div class="title-box">
+              <b class="title-box__text">Оставьте свои данные, мы вам перезвоним</b>
             </div>
 
             <div class="form-field">
@@ -184,7 +184,7 @@
       </section>
 
       <!--our-work-->
-      <section class="our-work section">
+      <section class="our-work">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work-list">
@@ -408,80 +408,86 @@
     </section>
     <!--footer -->
 
-    <footer class="footer section">
+    <footer class="footer">
       <div class="container">
-        <div class="footer-flex">
-          <div>
-            <a class="logo" href="info@dvstudio.com"
-              >Web<span class="logo__footer--white">Studio</span></a
-            >
-            <address class="main-adress">
-              <ul class="bot-address-list">
-                <li class="bot-address-item">
-                  <a class="street-link" href="#">г.Киев, пр.т Леси Украинки, 26</a>
+        <div class="footter_block">
+          <div class="contacts-socials">
+            <div class="footer-address">
+              <a class="logo" href="info@dvstudio.com"
+                >Web<span class="logo__footer--white">Studio</span></a
+              >
+              <address class="main-adress">
+                <ul class="bot-address-list">
+                  <li class="bot-address-item">
+                    <a class="street-link" href="#">г.Киев, пр.т Леси Украинки, 26</a>
+                  </li>
+                  <li class="bot-address-item">
+                    <a class="bot-contact-link" href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="bot-address-item">
+                    <a class="bot-contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+
+            <div class="social-block">
+              <h2 class="socials-title">присоединяйтесь</h2>
+              <ul class="footer-socials">
+                <li class="comapnies-item">
+                  <a class="icon-link fticon" href="https://www.instagram.com">
+                    <svg class="inst-icon" width="20" height="20px">
+                      <use href="./images/decoration/icons/symbol-defs.svg#icon-inst"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="bot-address-item">
-                  <a class="bot-contact-link" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
+                <li class="comapnies-item">
+                  <a class="icon-link fticon" href="https://www.twitter.com">
+                    <svg class="twit-icon" width="20" height="20px">
+                      <use href="./images/decoration/icons/symbol-defs.svg#icon-twit"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="bot-address-item">
-                  <a class="bot-contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="comapnies-item">
+                  <a class="icon-link fticon" href="https://www.facebook.com">
+                    <svg class="face-icon" width="20" height="20px">
+                      <use href="./images/decoration/icons/symbol-defs.svg#icon-face"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="comapnies-item">
+                  <a class="icon-link fticon" href="https://www.linkedin.com">
+                    <svg class="in-icon" width="20" height="20px">
+                      <use href="./images/decoration/icons/symbol-defs.svg#icon-in"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
-          </div>
-
-          <div class="social-block">
-            <h2 class="socials-title">присоединяйтесь</h2>
-            <ul class="footer-socials">
-              <li class="comapnies-item">
-                <a class="icon-link fticon" href="https://www.instagram.com">
-                  <svg class="inst-icon" width="20" height="20px">
-                    <use href="./images/decoration/icons/symbol-defs.svg#icon-inst"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="comapnies-item">
-                <a class="icon-link fticon" href="https://www.twitter.com">
-                  <svg class="twit-icon" width="20" height="20px">
-                    <use href="./images/decoration/icons/symbol-defs.svg#icon-twit"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="comapnies-item">
-                <a class="icon-link fticon" href="https://www.facebook.com">
-                  <svg class="face-icon" width="20" height="20px">
-                    <use href="./images/decoration/icons/symbol-defs.svg#icon-face"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="comapnies-item">
-                <a class="icon-link fticon" href="https://www.linkedin.com">
-                  <svg class="in-icon" width="20" height="20px">
-                    <use href="./images/decoration/icons/symbol-defs.svg#icon-in"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            </div>
           </div>
           <div class="submit">
             <b class="submit-title">Подпишитесь на рассылку</b>
-            <label for="submit-mail">
-              <input
-                class="mail-input"
-                type="email"
-                name="email"
-                id="submit-mail"
-                placeholder="E-mail"
-              />
+
+            <form class="footer-form">
+              <label for="submit-mail">
+                <input
+                  class="mail-input"
+                  type="email"
+                  name="email"
+                  id="submit-mail"
+                  placeholder="E-mail"
+                />
+              </label>
+
               <button class="submit-btn" type="submit">
                 Подписаться
                 <svg class="icon-submit" width="24" height="24">
                   <use href="./images/decoration/icons/symbol-defs.svg#icon-submit"></use>
                 </svg>
               </button>
-            </label>
+            </form>
           </div>
         </div>
       </div>

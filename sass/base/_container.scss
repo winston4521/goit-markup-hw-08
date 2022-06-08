@@ -5,17 +5,17 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: 480px) {
+  @include media(mobile) {
     width: 480px;
     background-color: tomato;
   }
-  @media screen and (min-width: 768px) {
+  @include media(tablet) {
     width: 768px;
     background-color: rgb(19, 19, 162);
   }
 
-  @media screen and (min-width: 1600px) {
-    width: 1600px;
-    background-color: yellow;
+  @include media(desktop) {
+    width: 1200px;
+    background-color: rgb(158, 158, 155);
   }
 }

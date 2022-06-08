@@ -3,7 +3,7 @@
   border-bottom: 1px solid var(--bgc-color-white);
 }
 
-.portfolio-titel {
+.portfolio-title {
   @extend %hidden;
 }
 
@@ -91,7 +91,7 @@
 // portfolio btns
 .btn-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
