@@ -6,7 +6,7 @@ body {
 }
 
 .section {
-  @include media(desktop-only) {
+  @include media(max-t) {
     padding: 60px 0px;
   }
   @include media(desktop) {
@@ -20,7 +20,7 @@ body {
   font-size: 28px;
   line-height: 1.17;
 
-  @include media(mobile) {
+  @include media(max-t) {
     margin-bottom: 30px;
   }
   @include media(desktop) {

@@ -1,7 +1,7 @@
 .footer {
   background-color: var(--footer-color);
 
-  @include media(mobile) {
+  @include media(max-dd) {
     padding: 60px 0px;
   }
 }
@@ -19,10 +19,13 @@
 .contacts-socials {
   @include media(tablet) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
+  }
+  @include media(tablet-only) {
     margin-bottom: 60px;
   }
+
   @include media(desktop) {
     align-items: center;
     justify-content: space-around;
@@ -52,12 +55,11 @@
   color: var(--bot-contact-rgb);
 
   @include media(mobile) {
-    display: flex;
-    align-items: center;
+    text-align: center;
   }
 }
 .bot-address-list {
-  @include media(mobile) {
+  @include media(max-m) {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -100,7 +102,7 @@
 /* ============= / */
 
 .submit {
-  @include media(mobile) {
+  @include media(max-t) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,7 +110,7 @@
 }
 
 .footer-form {
-  @include media(mobile) {
+  @include media(max-t) {
     display: flex;
     flex-direction: column;
 
@@ -118,6 +120,7 @@
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    margin-top: 20px;
   }
 }
 
@@ -127,8 +130,9 @@
   text-transform: uppercase;
   color: var(--white-color);
 
-  @include media(mobile);
-  margin-bottom: 20px;
+  @include media(max-dd) {
+    margin-bottom: 20px;
+  }
 }
 .mail-input {
   width: 450px;
@@ -172,10 +176,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 
-  @include media(mobile-only) {
-    margin-top: 20px;
-  }
-  @include media(tablet-only) {
+  @include media(max-t) {
     margin-top: 20px;
   }
 

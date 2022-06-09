@@ -36,14 +36,20 @@
 }
 
 .advantages__item {
-  @include media(tablet) {
+  &:not(:last-child) {
+    @include media(mobile-only) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include media(tablet-only) {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 
   &:not(:last-child) {
-    @include media(mobile-only) {
-      margin-bottom: 30px;
+    @include media(desktop) {
+      margin-right: 30px;
     }
   }
 }

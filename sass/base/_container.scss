@@ -1,21 +1,23 @@
 .container {
+  display: block;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
   margin-left: auto;
   margin-right: auto;
 
-  padding-left: 15px;
-  padding-right: 15px;
-
   @include media(mobile) {
     width: 480px;
-    background-color: tomato;
+    // background-color: tomato;
   }
   @include media(tablet) {
     width: 768px;
-    background-color: rgb(19, 19, 162);
+    // background-color: rgb(19, 19, 162);
   }
 
   @include media(desktop) {
     width: 1200px;
-    background-color: rgb(158, 158, 155);
+    // background-color: rgb(158, 158, 155);
   }
 }

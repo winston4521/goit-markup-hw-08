@@ -1,11 +1,5 @@
 .companies-list {
-  @include media(mobile) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-
-  @include media(tablet) {
+  @include media(max-t) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -18,7 +12,7 @@
 }
 
 .companies-item {
-  @include media(mobile-only) {
+  @include media(max-m) {
     width: calc((100% - 2 * 30px) / 2);
 
     margin: 15px;

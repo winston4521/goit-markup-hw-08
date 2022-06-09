@@ -30,7 +30,7 @@
 
   @include transitionCubic(background-color);
 
-  @include medai(desctop) {
+  @include media(desctop) {
     &:nth-child(3n) {
       margin-right: 0;
     }
