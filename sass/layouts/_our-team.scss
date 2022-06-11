@@ -3,7 +3,7 @@
 }
 
 .img-list {
-  @include media(tablet) {
+  @include media(tablet-only) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;

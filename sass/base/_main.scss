@@ -4,6 +4,9 @@ body {
   color: var(--title-text-color);
   letter-spacing: 0.03em;
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 .section {
   @include media(max-t) {
