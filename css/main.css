@@ -810,7 +810,7 @@ p {
 
 @media screen and (max-width: 3000px) {
   .side-nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
