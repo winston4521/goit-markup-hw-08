@@ -42,6 +42,7 @@
           </svg>
         </button>
         <!-- SIDE NAV -->
+
         <div class="side-nav" id="menu-container" data-menu>
           <ul class="side-nav__menu">
             <li class="side-nav__pages">Студия</li>
@@ -51,18 +52,19 @@
 
           <ul class="side-nav__contacts">
             <li class="side-nav_item">
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="side-nav__link side-nav__link--phone"  href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
             <li class="side-nav_item">
-              <a href="tel:+380961111111">+380961111111</a>
+              <a class="side-nav__link side-nav__link--mail href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
+            
           </ul>
 
           <ul class="side-nav__socials">
-            <li class="side-nav__invet"><a href="" class="side-nav__links">Instagram</a></li>
-            <li class="side-nav__invet"><a href="" class="side-nav__links">Twitter</a></li>
-            <li class="side-nav__invet"><a href="" class="side-nav__links">Facebook</a></li>
-            <li class="side-nav__invet"><a href="" class="side-nav__links">LinkedIn</a></li>
+            <li class="side-nav__invet"><a href="" class="side-nav__social--link">Instagram</a></li>
+            <li class="side-nav__invet"><a href="" class="side-nav__social--link">Twitter</a></li>
+            <li class="side-nav__invet"><a href="" class="side-nav__social--link">Facebook</a></li>
+            <li class="side-nav__invet"><a href="" class="side-nav__social--link">LinkedIn</a></li>
           </ul>
         </div>
         <!-- HEAD NAV -->
@@ -111,7 +113,9 @@
             Eфективное решение<br />
             для вашего бизнеса
           </h1>
-          <button class="btn primary__btn" type="button" data-modal-open>Заказать услугу</button>
+          <button class="btn primary__btn" type="button" aria-label="opening form" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -235,19 +239,74 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li class="img-item">
-              <img class="work-image" src="./images/work/box1.jpg" alt="разметка" />
+              <picture>
+                <!-- ==================DESC================= -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/our-work-pic/our-work.jpg    1x,
+                    ./images/our-work-pic/our-work@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="work-image"
+                  src="./images/our-work-pic/our-work.jpg "
+                  alt="разметка"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="work-box">
                 <p class="work-title">Десктопные приложения</p>
               </div>
             </li>
             <li class="img-item">
-              <img class="work-image" src="./images/work/box2.jpg" alt="подбор стилей" />
+              <picture>
+                <!-- ==================DESC================= -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/our-work-pic/our-work-1.jpg    1x,
+                    ./images/our-work-pic/our-work@2x-1.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="work-image"
+                  src="./images/our-work-pic/our-work-1.jpg  "
+                  alt="разметка"
+                  loading="lazy"
+                />
+              </picture>
               <div class="work-box">
                 <p class="work-title">Мобильные приложения</p>
               </div>
             </li>
             <li class="img-item">
-              <img class="work-image" src="./images/work/box3.jpg" alt="подбор цветов" />
+              <picture>
+                <!-- ==================DESC================= -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/our-work-pic/our-work-2.jpg    1x,
+                    ./images/our-work-pic/our-work@2x-2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="work-image"
+                  src="./images/our-work-pic/our-work-2.jpg  "
+                  alt="разметка"
+                  loading="lazy"
+                />
+              </picture>
               <div class="work-box">
                 <p class="work-title">Дизайнерские решения</p>
               </div>
@@ -261,7 +320,45 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="img-list">
             <li class="team-item">
-              <img src="./images/employees/emp1.jpg" alt="Ігор Демяненко" />
+              <picture>
+                <!-- ==================DESC================= -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/my-team_pic/my-team-d.jpg    1x,
+                    ./images/my-team_pic/my-team-d@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- ==================TAB================= -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/my-team_pic/my-team-t.jpg    1x,
+                    ./images/my-team_pic/my-team-t@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- ==================MOB================= -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/my-team_pic/my-team-m.jpg    1x,
+                    ./images/my-team_pic/my-team-m@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="work-image"
+                  src="./images/my-team_pic/my-team-m.jpg "
+                  alt="разметка"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="mbr-name">Ігор Демяненко</h3>
               <p class="mbr-text">Product designer</p>
 
@@ -297,7 +394,45 @@
               </ul>
             </li>
             <li class="team-item">
-              <img src="./images/employees/emp2.jpg" alt="Ольга репкина" />
+              <picture>
+                <!-- ==================DESC================= -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/my-team_pic/my-team-d1.jpg     1x,
+                    ./images/my-team_pic/my-team-d@2x-1.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- ==================TAB================= -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/my-team_pic/my-team-t-1.jpg    1x,
+                    ./images/my-team_pic/my-team-t@2x-1.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- ==================MOB================= -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/my-team_pic/my-team-m1.jpg     1x,
+                    ./images/my-team_pic/my-team-m@2x-1.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="work-image"
+                  src="./images/my-team_pic/my-team-m1.jpg "
+                  alt="разметка"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="mbr-name">Ольга репкина</h3>
               <p class="mbr-text">Frontend Deweloper</p>
               <ul class="socials">
@@ -333,7 +468,45 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/employees/emp3.jpg" alt="Николай Тарасов" />
+              <picture>
+                <!-- ==================DESC================= -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/my-team_pic/my-team-d-2.jpg    1x,
+                    ./images/my-team_pic/my-team-d@2x-2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- ==================TAB================= -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/my-team_pic/my-team-t-2.jpg    1x,
+                    ./images/my-team_pic/my-team-t@2x-2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- ==================MOB================= -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/my-team_pic/my-team-m2.jpg    1x,
+                    ./images/my-team_pic/my-team-m2@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="work-image"
+                  src="./images/my-team_pic/my-team-m2.jpg "
+                  alt="разметка"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="mbr-name">Николай Тарасов</h3>
               <p class="mbr-text">Marketing</p>
               <ul class="socials">
@@ -369,7 +542,45 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/employees/emp4.jpg" alt="Михаил Ермаков" />
+              <picture>
+                <!-- ==================DESC================= -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/my-team_pic/my-team-d-3.jpg    1x,
+                    ./images/my-team_pic/my-team-d@2x-3.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- ==================TAB================= -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/my-team_pic/my-team-t-3.jpg    1x,
+                    ./images/my-team_pic/my-team-t@2x-3.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- ==================MOB================= -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/my-team_pic/my-team-m-3.jpg    1x,
+                    ./images/my-team_pic/my-team-m@2x-3.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  class="work-image"
+                  src="./images/my-team_pic/my-team-m-3.jpg "
+                  alt="разметка"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="mbr-name">Михаил Ермаков</h3>
               <p class="mbr-text">UL Designer</p>
               <ul class="socials">
@@ -415,37 +626,37 @@
         <ul class="companies-list">
           <li class="companies-item">
             <a class="companies-link" href="#"
-              ><svg class="company-icon" width="106" height="60">
+              ><svg class="companies-icon" width="106" height="60">
                 <use href="./images/decoration/icons/symbol-defs.svg#icon-yaco"></use></svg
             ></a>
           </li>
           <li class="companies-item">
             <a class="companies-link" href="#"
-              ><svg class="company-icon" width="106" height="60">
+              ><svg class="companies-icon" width="106" height="60">
                 <use href="./images/decoration/icons/symbol-defs.svg#icon-tag"></use></svg
             ></a>
           </li>
           <li class="companies-item">
             <a class="companies-link" href="#"
-              ><svg class="company-icon" width="106" height="60">
+              ><svg class="companies-icon" width="106" height="60">
                 <use href="./images/decoration/icons/symbol-defs.svg#icon-company"></use></svg
             ></a>
           </li>
           <li class="companies-item">
             <a class="companies-link" href="#"
-              ><svg class="company-icon" width="106" height="60">
+              ><svg class="companies-icon" width="106" height="60">
                 <use href="./images/decoration/icons/symbol-defs.svg#icon-foster"></use></svg
             ></a>
           </li>
           <li class="companies-item">
             <a class="companies-link" href="#"
-              ><svg class="company-icon" width="106" height="60">
+              ><svg class="companies-icon" width="106" height="60">
                 <use href="./images/decoration/icons/symbol-defs.svg#icon-brand"></use></svg
             ></a>
           </li>
           <li class="companies-item">
             <a class="companies-link" href="#"
-              ><svg class="company-icon" width="106" height="60">
+              ><svg class="companies-icon" width="106" height="60">
                 <use href="./images/decoration/icons/symbol-defs.svg#icon-comp-tag"></use></svg
             ></a>
           </li>
@@ -457,23 +668,23 @@
     <footer class="footer">
       <div class="container">
         <div class="footter_block">
-          <div class="contacts-socials">
-            <div class="footer-address">
+          <div class="footer-container">
+            <div class="address">
               <a class="logo" href="info@dvstudio.com"
                 >Web<span class="logo__footer--white">Studio</span></a
               >
               <address class="main-adress">
-                <ul class="bot-address-list">
-                  <li class="bot-address-item">
-                    <a class="street-link" href="#">г.Киев, пр.т Леси Украинки, 26</a>
+                <ul class="main-address__list">
+                  <li class="main-address__item">
+                    <a class="main-adress__street" href="#">г.Киев, пр.т Леси Украинки, 26</a>
                   </li>
-                  <li class="bot-address-item">
-                    <a class="bot-contact-link" href="mailto:info@devstudio.com"
+                  <li class="main-address__item">
+                    <a class="main-address__link" href="mailto:info@devstudio.com"
                       >info@devstudio.com</a
                     >
                   </li>
-                  <li class="bot-address-item">
-                    <a class="bot-contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                  <li class="main-address__item">
+                    <a class="main-address__link" href="tel:+380961111111">+38 096 111 11 11</a>
                   </li>
                 </ul>
               </address>

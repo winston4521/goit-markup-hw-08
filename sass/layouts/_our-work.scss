@@ -11,8 +11,8 @@
 }
 
 .img-item {
-  width: 370px;
-  height: 294;
+  max-width: 370px;
+
   position: relative;
 
   &:not(:last-child) {

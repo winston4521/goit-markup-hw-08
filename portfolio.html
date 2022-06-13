@@ -112,32 +112,65 @@
           <h1 class="portfolio-title">Меню портфолио</h1>
 
           <ul class="btn-list">
-            <li class="btn-item"><button class="btn secondary" type="button">Все</button></li>
-            <li class="btn-item">
+            <li class="btn-list__item"><button class="btn secondary" type="button">Все</button></li>
+            <li class="btn-list__item">
               <button class="btn secondary" type="button">Веб-сайты</button>
             </li>
-            <li class="btn-item">
+            <li class="btn-list__item">
               <button class="btn secondary" type="button">Приложения</button>
             </li>
-            <li class="btn-item">
+            <li class="btn-list__item">
               <button class="btn secondary" type="button">Дизайн</button>
             </li>
-            <li class="btn-item">
+            <li class="btn-list__item">
               <button class="btn secondary" type="button">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="gallery-list">
-            <li class="galery-item">
+          <ul class="gallery">
+            <li class="gallery-item">
               <a class="galery-link" href="#">
-                <div class="produkt-thumb">
-                  <img
-                    class="galery-img"
-                    src="./images/galery/project1.jpg"
-                    alt="технокряк"
-                    width="370"
-                    height="294"
-                  />
+                <div class="product">
+                  <!-- pic1 -->
+                  <picture>
+                    <!-- ==================DESC================= -->
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-d.jpg    1x,
+                        ./images/my-team_pic/my-team-d@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================TAB================= -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-t.jpg    1x,
+                        ./images/my-team_pic/my-team-t@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================MOB================= -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-m.jpg    1x,
+                        ./images/my-team_pic/my-team-m@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="work-image"
+                      src="./images/gallery-pic/gallery-m.jpg "
+                      alt="разметка"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="product-box">
                     <p class="product-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -146,22 +179,55 @@
                     </p>
                   </div>
                 </div>
-                <div class="prt-descrition">
-                  <h2 class="prt-title">Технокряк</h2>
-                  <p class="prt-text">Веб-сайт</p>
+                <div class="p-descrition">
+                  <h2 class="p-descrition__title">Технокряк</h2>
+                  <p class="p-descrition__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="galery-item">
+            <li class="gallery-item">
               <a class="galery-link" href="#">
-                <div class="produkt-thumb">
-                  <img
-                    class="galery-img"
-                    src="./images/galery/project2.jpg"
-                    alt="постер два баскидболісти"
-                    width="370"
-                    height="294"
-                  />
+                <div class="product">
+                  <!-- pic2 -->
+                  <picture>
+                    <!-- ==================DESC================= -->
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-d-1.jpg    1x,
+                        ./images/my-team_pic/my-team-d@2x-1.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================TAB================= -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-t-1.jpg    1x,
+                        ./images/my-team_pic/my-team-t@2x-1.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================MOB================= -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-m-1.jpg    1x,
+                        ./images/my-team_pic/my-team-m@2x-1.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="work-image"
+                      src="./images/gallery-pic/gallery-m-1.jpg "
+                      alt="разметка"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="product-box">
                     <p class="product-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -170,22 +236,55 @@
                     </p>
                   </div>
                 </div>
-                <div class="prt-descrition">
-                  <h2 class="prt-title">Постер New Orlean vs Golden Star</h2>
-                  <p class="prt-text">Дизайн</p>
+                <div class="p-descrition">
+                  <h2 class="p-descrition__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="p-descrition__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="galery-item">
+            <li class="gallery-item">
               <a class="galery-link" href="#">
-                <div class="produkt-thumb">
-                  <img
-                    class="galery-img"
-                    src="./images/galery/project3.jpg"
-                    alt="емблема ресторану Sea Food"
-                    width="370"
-                    height="294"
-                  />
+                <div class="product">
+                  <!-- pic3 -->
+                  <picture>
+                    <!-- ==================DESC================= -->
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-d-2.jpg    1x,
+                        ./images/my-team_pic/my-team-d@2x-2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================TAB================= -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-t-2.jpg    1x,
+                        ./images/my-team_pic/my-team-t@2x-2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================MOB================= -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-m-2.jpg    1x,
+                        ./images/my-team_pic/my-team-m@2x-2.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="work-image"
+                      src="./images/gallery-pic/gallery-m-2.jpg "
+                      alt="разметка"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="product-box">
                     <p class="product-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -194,22 +293,55 @@
                     </p>
                   </div>
                 </div>
-                <div class="prt-descrition">
-                  <h2 class="prt-title">Ресторан Seafood</h2>
-                  <p class="prt-text">Приложение</p>
+                <div class="p-descrition">
+                  <h2 class="p-descrition__title">Ресторан Seafood</h2>
+                  <p class="p-descrition__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="galery-item">
+            <li class="gallery-item">
               <a class="galery-link" href="#">
-                <div class="produkt-thumb">
-                  <img
-                    class="galery-img"
-                    src="./images/galery/project4.jpg"
-                    alt="наушники"
-                    width="370"
-                    height="294"
-                  />
+                <div class="product">
+                  <!-- pic4 -->
+                  <picture>
+                    <!-- ==================DESC================= -->
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-d-3.jpg    1x,
+                        ./images/my-team_pic/my-team-d@2x-3.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================TAB================= -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-t-3.jpg    1x,
+                        ./images/my-team_pic/my-team-t@2x-3.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================MOB================= -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-m-3.jpg    1x,
+                        ./images/my-team_pic/my-team-m@2x-3.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="work-image"
+                      src="./images/gallery-pic/gallery-m-3.jpg "
+                      alt="разметка"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="product-box">
                     <p class="product-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -218,22 +350,55 @@
                     </p>
                   </div>
                 </div>
-                <div class="prt-descrition">
-                  <h2 class="prt-title">Проект Prime</h2>
-                  <p class="prt-text">Маркетинг</p>
+                <div class="p-descrition">
+                  <h2 class="p-descrition__title">Проект Prime</h2>
+                  <p class="p-descrition__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="galery-item">
+            <li class="gallery-item">
               <a class="galery-link" href="#">
-                <div class="produkt-thumb">
-                  <img
-                    class="galery-img"
-                    src="./images/galery/project5.jpg"
-                    alt="дві коробочки"
-                    width="370"
-                    height="294"
-                  />
+                <div class="product">
+                  <!-- pic5 -->
+                  <picture>
+                    <!-- ==================DESC================= -->
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-d-4.jpg    1x,
+                        ./images/my-team_pic/my-team-d@2x-4.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================TAB================= -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-t-4.jpg    1x,
+                        ./images/my-team_pic/my-team-t@2x-4.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================MOB================= -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-m-4.jpg    1x,
+                        ./images/my-team_pic/my-team-m@2x-4.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="work-image"
+                      src="./images/gallery-pic/gallery-m-4.jpg "
+                      alt="разметка"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="product-box">
                     <p class="product-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -242,22 +407,56 @@
                     </p>
                   </div>
                 </div>
-                <div class="prt-descrition">
-                  <h2 class="prt-title">Проект Boxes</h2>
-                  <p class="prt-text">Приложение</p>
+                <div class="p-descrition">
+                  <h2 class="p-descrition__title">Проект Boxes</h2>
+                  <p class="p-descrition__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="galery-item">
+            <li class="gallery-item">
               <a class="galery-link" href="#">
-                <div class="produkt-thumb">
-                  <img
-                    class="galery-img"
-                    src="./images/galery/project6.jpg"
-                    alt="монітор"
-                    width="370"
-                    height="294"
-                  />
+                <div class="product">
+                  <!-- pic6 -->
+
+                  <picture>
+                    <!-- ==================DESC================= -->
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-d-5.jpg    1x,
+                        ./images/my-team_pic/my-team-d@2x-5.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================TAB================= -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-t-5.jpg    1x,
+                        ./images/my-team_pic/my-team-t@2x-5.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================MOB================= -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-m-5.jpg    1x,
+                        ./images/my-team_pic/my-team-m@2x-5.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="work-image"
+                      src="./images/gallery-pic/gallery-m-5.jpg "
+                      alt="разметка"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="product-box">
                     <p class="product-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -266,22 +465,55 @@
                     </p>
                   </div>
                 </div>
-                <div class="prt-descrition">
-                  <h2 class="prt-title">Inspiration has no Borders</h2>
-                  <p class="prt-text">Веб-сайт</p>
+                <div class="p-descrition">
+                  <h2 class="p-descrition__title">Inspiration has no Borders</h2>
+                  <p class="p-descrition__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="galery-item">
+            <li class="gallery-item">
               <a class="galery-link" href="#">
-                <div class="produkt-thumb">
-                  <img
-                    class="galery-img"
-                    src="./images/galery/project7.jpg"
-                    alt="книга"
-                    width="370"
-                    height="294"
-                  />
+                <div class="product">
+                  <!-- pic7 -->
+                  <picture>
+                    <!-- ==================DESC================= -->
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-d-6.jpg    1x,
+                        ./images/my-team_pic/my-team-d@2x-6.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================TAB================= -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-t-6.jpg    1x,
+                        ./images/my-team_pic/my-team-t@2x-6.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================MOB================= -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-m-6.jpg    1x,
+                        ./images/my-team_pic/my-team-m@2x-6.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="work-image"
+                      src="./images/gallery-pic/gallery-m-6.jpg "
+                      alt="разметка"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="product-box">
                     <p class="product-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -290,22 +522,55 @@
                     </p>
                   </div>
                 </div>
-                <div class="prt-descrition">
-                  <h2 class="prt-title">Издание Limited Edition</h2>
-                  <p class="prt-text">Дизайн</p>
+                <div class="p-descrition">
+                  <h2 class="p-descrition__title">Издание Limited Edition</h2>
+                  <p class="p-descrition__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="galery-item">
+            <li class="gallery-item">
               <a class="galery-link" href="#">
-                <div class="produkt-thumb">
-                  <img
-                    class="galery-img"
-                    src="./images/galery/project8.jpg"
-                    alt="брилок"
-                    width="370"
-                    height="294"
-                  />
+                <div class="product">
+                  <!-- pic8 -->
+                  <picture>
+                    <!-- ==================DESC================= -->
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-d-7.jpg    1x,
+                        ./images/my-team_pic/my-team-d@2x-7.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================TAB================= -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-t-7.jpg    1x,
+                        ./images/my-team_pic/my-team-t@2x-7.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================MOB================= -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-m-7.jpg    1x,
+                        ./images/my-team_pic/my-team-m@2x-7.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="work-image"
+                      src="./images/gallery-pic/gallery-m-7.jpg "
+                      alt="разметка"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="product-box">
                     <p class="product-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -314,22 +579,55 @@
                     </p>
                   </div>
                 </div>
-                <div class="prt-descrition">
-                  <h2 class="prt-title">Проект LAB</h2>
-                  <p class="prt-text">Маркетинг</p>
+                <div class="p-descrition">
+                  <h2 class="p-descrition__title">Проект LAB</h2>
+                  <p class="p-descrition__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="galery-item">
+            <li class="gallery-item">
               <a class="galery-link" href="#">
-                <div class="produkt-thumb">
-                  <img
-                    class="galery-img"
-                    src="./images/galery/project9.jpg"
-                    alt="робота за лаптопом"
-                    width="370"
-                    height="294"
-                  />
+                <div class="product">
+                  <!-- pic9 -->
+                  <picture>
+                    <!-- ==================DESC================= -->
+
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-d-8.jpg    1x,
+                        ./images/my-team_pic/my-team-d@2x-8.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================TAB================= -->
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-t-8.jpg    1x,
+                        ./images/my-team_pic/my-team-t@2x-8.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- ==================MOB================= -->
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/gallery-pic/gallery-m-8.jpg    1x,
+                        ./images/my-team_pic/my-team-m@2x-8.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="work-image"
+                      src="./images/gallery-pic/gallery-m-8.jpg "
+                      alt="разметка"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="product-box">
                     <p class="product-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -338,9 +636,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="prt-descrition">
-                  <h2 class="prt-title">Growing Business</h2>
-                  <p class="prt-text">Приложение</p>
+                <div class="p-descrition">
+                  <h2 class="p-descrition__title">Growing Business</h2>
+                  <p class="p-descrition__text">Приложение</p>
                 </div>
               </a>
             </li>
