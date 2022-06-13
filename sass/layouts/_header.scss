@@ -186,6 +186,10 @@
   transform: translateY(-100%);
   @include transitionCubic(transform);
 
+  @include media(tablet) {
+    display: none;
+  }
+
   @include media(max-m) {
     &.is-open {
       transform: translateY(0);
