@@ -170,7 +170,7 @@
 // SIDE NAV
 
 .side-nav {
-  @include media(mobile) {
+  @include media(max-dd) {
     position: absolute;
     top: 0;
     left: 0;
@@ -194,76 +194,76 @@
         @include transitionCubic(transform);
       }
     }
+  }
 
-    &__pages {
-      font-weight: 500;
-      font-size: 40px;
+  &__pages {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    @include transitionCubic(color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+  &__contacts {
+    margin-top: auto;
+    margin-bottom: 64px;
+  }
+
+  &__link {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--paragraf-color);
+
+    @include transitionCubic(color);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    &--mail {
+      font-size: 24px;
+      line-height: 1.16;
+    }
+
+    &--phone {
+      font-size: 34px;
       line-height: 1.17;
-      letter-spacing: 0.02em;
-
-      @include transitionCubic(color);
-
-      &:hover,
-      &:focus {
-        color: var(--accent-color);
-      }
-      &:not(:last-child) {
-        margin-bottom: 32px;
-      }
     }
-    &__contacts {
-      margin-top: auto;
-      margin-bottom: 64px;
+  }
+
+  &_item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
     }
+  }
 
-    &__link {
-      font-weight: 500;
-      letter-spacing: 0.02em;
-      color: var(--paragraf-color);
+  &__socials {
+    display: flex;
+    justify-content: center;
+  }
 
-      @include transitionCubic(color);
-      &:hover,
-      &:focus {
-        color: var(--accent-color);
-      }
-      &--mail {
-        font-size: 24px;
-        line-height: 1.16;
-      }
+  &__invet {
+    color: var(--accent-color);
+    padding: 0px 10px;
+  }
+  &__invet:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  &__social--link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
 
-      &--phone {
-        font-size: 34px;
-        line-height: 1.17;
-      }
-    }
+    letter-spacing: 0.02em;
 
-    &_item {
-      &:not(:last-child) {
-        margin-bottom: 32px;
-      }
-    }
-
-    &__socials {
-      display: flex;
-      justify-content: center;
-    }
-
-    &__invet {
-      color: var(--accent-color);
-      padding: 0px 10px;
-    }
-    &__invet:not(:last-child) {
-      border-right: 1px solid rgba(33, 33, 33, 0.2);
-    }
-    &__social--link {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 1.2;
-
-      letter-spacing: 0.02em;
-
-      color: var(--accent-color);
-    }
+    color: var(--accent-color);
   }
 }
 
