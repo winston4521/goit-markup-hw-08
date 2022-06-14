@@ -10,7 +10,7 @@
 }
 
 @mixin media($type) {
-  $max-dd: 3000px;
+  $max-dd: 6000px;
   $max-t: 1199px;
   $max-m: 767px;
   $mobile: 480px;
@@ -62,6 +62,11 @@
   }
   @if $type == 'desktop' {
     @media screen and (min-width: $desktop) {
+      @content;
+    }
+  }
+  @if $type == 'desktop-max' {
+    @media screen and (min-width: $desktop) and  (max-width:#{$max-dd - 0.02}) {
       @content;
     }
   }

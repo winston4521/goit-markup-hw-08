@@ -1035,12 +1035,12 @@ p {
 
 .hero {
   text-align: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
-  max-width: 1600;
+  padding-bottom: 118px;
+  padding-top: 118px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-color: tomato;
+  background-color: #535151;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1355,7 +1355,7 @@ p {
   background-color: var(--footer-color);
 }
 
-@media screen and (max-width: 3000px) {
+@media screen and (max-width: 6000px) {
   .footer {
     padding: 60px 0px;
   }
