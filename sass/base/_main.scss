@@ -9,10 +9,10 @@ body.modal-open {
 }
 
 .section {
-  @include media(max-t) {
+  @include media(tablet-only) {
     padding: 60px 0px;
   }
-  @include media(desktop) {
+  @include media(desktop-only) {
     padding: 94px 0px;
   }
 }
