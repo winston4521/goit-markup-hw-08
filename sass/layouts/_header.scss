@@ -136,6 +136,10 @@
     @include media(mobile-only) {
       display: none;
     }
+    @include media(desktop) {
+      display: flex;
+      align-items: center;
+    }
   }
   &__icon--mail {
     @include media(tablet-only) {
