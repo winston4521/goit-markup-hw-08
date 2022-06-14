@@ -4,19 +4,17 @@
   @include media(max-dd) {
     padding: 60px 0px;
   }
-}
 
-// footer contacts block
-
-.footter_block {
-  @include media(desktop) {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+  &__block {
+    @include media(desktop) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
   }
 }
 
-.footer-container {
+.address__block {
   @include media(tablet) {
     display: flex;
     justify-content: space-between;
@@ -35,6 +33,7 @@
 
 .address {
   text-align: center;
+  display: block;
 
   @include media(mobile-only) {
     margin-bottom: 60px;
@@ -44,7 +43,7 @@
   }
 }
 
-.main-adress {
+.main-address {
   align-items: center;
   margin-top: 20px;
 
@@ -56,34 +55,51 @@
   &__street {
     color: rgba(255, 255, 255, 1);
   }
-}
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
+    @include media(desktop) {
+      margin-bottom: 9px;
+    }
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71px;
 
-.main-address__item:not(:last-child) {
-  margin-bottom: 8px;
-  @include media(desktop) {
-    margin-bottom: 9px;
+    color: rgba(255, 255, 255, 0.6);
+
+    @include transitionCubic(color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }
 
-.main-address__link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71px;
-
-  color: rgba(255, 255, 255, 0.6);
-
-  @include transitionCubic(color);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
+// footter socials
 
 .social-block {
   @include media(mobile);
   margin-bottom: 60px;
   text-align: center;
+
+  &__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+.fticon {
+  fill: var(--white-color);
 }
 
 /* ===============
@@ -95,25 +111,25 @@
   @include media(desktop) {
     text-align: start;
   }
+  &__form {
+    margin-top: 20px;
+    @include media(max-t) {
+    }
+    @include media(desktop) {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
 }
 
-.footer-form {
-  margin-top: 20px;
-  @include media(max-t) {
-  }
-  @include media(desktop) {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-  }
-}
-
-.submit-title {
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--white-color);
-}
 .mail-input {
   width: 100%;
   height: 50px;
@@ -168,22 +184,4 @@
   @include media(desktop) {
     margin-left: 12px;
   }
-}
-
-.socials-title {
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-
-  color: var(--white-color);
-}
-
-.footer-socials {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.fticon {
-  fill: var(--white-color);
 }

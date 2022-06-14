@@ -1,78 +1,76 @@
-.our-members {
+.team {
   background-color: #f5f4fa;
-}
 
-.img-list {
-  @include media(tablet-only) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
+  &__list {
+    @include media(tablet-only) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+    @include media(desktop) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
-  @include media(desktop) {
+
+  &__item {
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-}
-
-.team-item {
-  background-color: var(--white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding-bottom: 24px;
-
-  &:not(:last-child) {
-    @include media(mobile-only) {
-      margin-bottom: 30px;
-    }
-  }
-
-  @include media(tablet-only) {
-    width: calc((100% - 2 * 30px) / 2);
-    margin: 15px;
+    flex-wrap: wrap;
     flex-direction: column;
-  }
+    padding-bottom: 24px;
 
-  &:not(:last-child) {
+    &:not(:last-child) {
+      @include media(mobile-only) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @include media(tablet-only) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+      flex-direction: column;
+    }
+
+    &:not(:last-child) {
+      @include media(desktop) {
+        margin-right: 30px;
+      }
+    }
     @include media(desktop) {
-      margin-right: 30px;
+      width: 270px;
+      padding-bottom: 30px;
     }
   }
-  @include media(desktop) {
-    width: 270px;
-    padding-bottom: 30px;
+
+  &__socials {
+    width: 206px;
+    height: 44px;
+    display: flex;
+
+    &--item:not(:last-child) {
+      margin-right: 10px;
+    }
   }
-}
-
-.socials {
-  width: 206px;
-  height: 44px;
-
-  display: flex;
-}
-
-.comapnies-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.mbr-name {
-  text-align: center;
-  margin-bottom: 10px;
-  margin-top: 30px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-}
-.mbr-text {
-  text-align: center;
-  margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.2;
-  color: var(--paragraf-color);
+  &__name {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  &__text {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--paragraf-color);
+  }
 }

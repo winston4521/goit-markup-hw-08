@@ -71,7 +71,7 @@ body.modal-open {
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 480px) {
   .section {
     padding: 60px 0px;
   }
@@ -602,7 +602,6 @@ p {
 }
 
 .header-section {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -819,14 +818,19 @@ p {
   }
 }
 
-@media screen and (max-width: 3000px) {
+.side-nav {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
   .side-nav {
     position: absolute;
+    max-height: 791px;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 40px 48px;
+    padding: 48px 40px;
     background-color: var(--white-color);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1033,7 +1037,7 @@ p {
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
-  max-width: 100%;
+  max-width: 1600;
   margin-left: auto;
   margin-right: auto;
   background-color: tomato;
@@ -1060,7 +1064,7 @@ p {
   }
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 767px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-pic/hero-m.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-pic/hero-m.jpg);
@@ -1069,7 +1073,7 @@ p {
   }
 }
 
-@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-pic/hero-m@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-pic/hero-m@2x.jpg);
@@ -1160,12 +1164,12 @@ p {
   color: var(--white-color);
 }
 
-.our-members {
+.team {
   background-color: #f5f4fa;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .img-list {
+  .team__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1176,7 +1180,7 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-  .img-list {
+  .team__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1189,7 +1193,7 @@ p {
   }
 }
 
-.team-item {
+.team__item {
   background-color: var(--white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1213,13 +1217,13 @@ p {
 }
 
 @media screen and (max-width: 767.98px) {
-  .team-item:not(:last-child) {
+  .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .team-item {
+  .team__item {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
     -webkit-box-orient: vertical;
@@ -1230,19 +1234,19 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-  .team-item:not(:last-child) {
+  .team__item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .team-item {
+  .team__item {
     width: 270px;
     padding-bottom: 30px;
   }
 }
 
-.socials {
+.team__socials {
   width: 206px;
   height: 44px;
   display: -webkit-box;
@@ -1250,11 +1254,11 @@ p {
   display: flex;
 }
 
-.comapnies-item:not(:last-child) {
+.team__socials--item:not(:last-child) {
   margin-right: 10px;
 }
 
-.mbr-name {
+.team__name {
   text-align: center;
   margin-bottom: 10px;
   margin-top: 30px;
@@ -1263,7 +1267,7 @@ p {
   line-height: 1.2;
 }
 
-.mbr-text {
+.team__text {
   text-align: center;
   margin-bottom: 16px;
   font-size: 16px;
@@ -1272,7 +1276,7 @@ p {
 }
 
 @media screen and (max-width: 1199px) {
-  .companies-list {
+  .companies__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1283,7 +1287,7 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-  .companies-list {
+  .companies__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1294,32 +1298,32 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-  .companies-item {
+  .companies__item {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .companies-item {
+  .companies__item {
     width: calc((100% - 3 * 30px) / 3);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .companies-item:not(:last-child) {
+  .companies__item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .companies-item {
+  .companies__item {
     width: 170px;
   }
 }
 
-.companies-link {
+.companies__link {
   height: 92px;
   border: 1px solid;
   display: -webkit-box;
@@ -1338,12 +1342,12 @@ p {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.companies-link:hover, .companies-link:focus {
+.companies__link:hover, .companies__link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
 
-.companies-link .companies-icon {
+.companies__icon {
   fill: currentColor;
 }
 
@@ -1358,7 +1362,7 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-  .footter_block {
+  .footer__block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1372,7 +1376,7 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .footer-container {
+  .address__block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1386,13 +1390,13 @@ p {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .footer-container {
+  .address__block {
     margin-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-container {
+  .address__block {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1406,6 +1410,7 @@ p {
 
 .address {
   text-align: center;
+  display: block;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1420,7 +1425,7 @@ p {
   }
 }
 
-.main-adress {
+.main-address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1431,7 +1436,7 @@ p {
   color: var(--bot-contact-rgb);
 }
 
-.main-adress__street {
+.main-address__street {
   color: white;
 }
 
@@ -1463,6 +1468,27 @@ p {
   text-align: center;
 }
 
+.social-block__title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.social-block__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.fticon {
+  fill: var(--white-color);
+}
+
 /* ===============
 /*  Footer form */
 /* ============= / */
@@ -1476,12 +1502,12 @@ p {
   }
 }
 
-.footer-form {
+.submit__form {
   margin-top: 20px;
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-form {
+  .submit__form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1495,7 +1521,7 @@ p {
   }
 }
 
-.submit-title {
+.submit__title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -1578,27 +1604,6 @@ p {
   .submit-btn {
     margin-left: 12px;
   }
-}
-
-.socials-title {
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--white-color);
-}
-
-.footer-socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 20px;
-}
-
-.fticon {
-  fill: var(--white-color);
 }
 
 .header-prt {

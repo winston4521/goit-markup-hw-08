@@ -9,7 +9,7 @@ body.modal-open {
 }
 
 .section {
-  @include media(tablet-only) {
+  @include media(mobile) {
     padding: 60px 0px;
   }
   @include media(desktop-only) {

@@ -4,7 +4,7 @@
   padding-bottom: 200px;
   padding-top: 200px;
 
-  max-width: 100%;
+  max-width: 1600;
   margin-left: auto;
   margin-right: auto;
 
@@ -31,7 +31,7 @@
   }
 
   // -----MB-----
-  @include media(mobile-only) {
+  @include media(max-m) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero-pic/hero-m.jpg);
 
