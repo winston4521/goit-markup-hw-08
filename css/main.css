@@ -824,14 +824,13 @@ p {
 
 @media screen and (max-width: 767px) {
   .side-nav {
-    position: absolute;
-    max-height: 791px;
+    position: fixed;
+    max-height: 796px;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 48px 40px;
-    background-color: var(--white-color);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -840,7 +839,7 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     z-index: 999;
-    height: 796px;
+    background-color: var(--white-color);
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
     -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -910,9 +909,11 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .side-nav__invet {
@@ -935,6 +936,8 @@ p {
 .menu-button {
   width: 40px;
   height: 40px;
+  top: 0;
+  right: 0;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -957,15 +960,16 @@ p {
   }
 }
 
-.menu-button .icon-cross {
+.menu-button .icon-menu {
   display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
+  overflow-y: scroll;
 }
 
 .menu-button.is-open .icon-menu {
+  display: block;
+}
+
+.menu-button.is-open .icon-cross {
   display: none;
 }
 
