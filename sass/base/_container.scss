@@ -1,11 +1,7 @@
 .container {
   display: block;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0px 15px;
+  margin: 0px auto;
 
   @include media(mobile) {
     width: 480px;
