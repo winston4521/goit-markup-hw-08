@@ -10,7 +10,7 @@
   --main-font: Roboto;
 }
 
-.main-advantages__title, .portfolio-title {
+.main-advantages__title, .companies .companies__title, .portfolio-title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -71,13 +71,13 @@ body.modal-open {
   overflow: hidden;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .section {
     padding: 60px 0px;
   }
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0px;
   }
@@ -487,6 +487,18 @@ p {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding: 93px 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .backdrop {
+    padding: 208px 159px;
+  }
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -502,33 +514,47 @@ p {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: auto;
-  margin-left: auto;
+  position: relative;
+  padding: 40px;
   padding: 40px;
   background: var(--white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .modal {
     position: absolute;
+    width: 450px;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    max-width: 450px;
-    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -595,6 +621,13 @@ p {
 .header {
   background-color: var(--white-color);
   position: relative;
+  height: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 60px;
+  }
 }
 
 .portfolio-header {
@@ -643,7 +676,7 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .head-nav__pages {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -673,7 +706,7 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 28px 0px;
+  padding: 32px 0px;
 }
 
 .head-nav__link:hover, .head-nav__link:focus {
@@ -857,6 +890,10 @@ p {
   }
 }
 
+.side-nav .side-nav.is-open {
+  overflow: hidden;
+}
+
 .side-nav__pages {
   font-weight: 500;
   font-size: 40px;
@@ -943,6 +980,7 @@ p {
 .menu-button {
   width: 40px;
   height: 40px;
+  overflow-y: scroll;
   top: 0;
   right: 0;
   margin: 0;
@@ -969,7 +1007,6 @@ p {
 
 .menu-button .icon-menu {
   display: none;
-  overflow-y: scroll;
 }
 
 .menu-button.is-open .icon-menu {
@@ -1048,7 +1085,7 @@ p {
   text-align: center;
   padding-bottom: 118px;
   padding-top: 118px;
-  max-width: 1600px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   background-color: #535151;
@@ -1553,6 +1590,13 @@ p {
 
 @media screen and (min-width: 768px) {
   .mail-input {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mail-input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1617,7 +1661,7 @@ p {
   }
 }
 
-.header-prt {
+.portfolio__header {
   background-color: var(--white-color);
   border-bottom: 1px solid var(--bgc-color-white);
   position: relative;

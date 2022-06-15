@@ -1,6 +1,5 @@
 .footer {
   background-color: var(--footer-color);
-  
 
   @include media(max-dd) {
     padding: 60px 0px;
@@ -136,6 +135,11 @@
   height: 50px;
   padding: 16px 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
+
+  @include media(tablet) {
+    width: 450px;
+    margin: 0 auto;
+  }
 
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

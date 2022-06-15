@@ -1,6 +1,11 @@
 .header {
   background-color: var(--white-color);
   position: relative;
+  height: 80px;
+
+  @include media(max-m) {
+    height: 60px;
+  }
 }
 .portfolio-header {
   border-bottom: 1px solid var(--bgc-color-white);
@@ -33,7 +38,7 @@
   }
 
   &__pages {
-    @include media(tablet) {
+    @include media(tablet-only) {
       display: flex;
       margin-right: 84px;
     }
@@ -54,7 +59,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    padding: 28px 0px;
+    padding: 32px 0px;
 
     &:hover,
     &:focus {
@@ -203,6 +208,10 @@
     }
   }
 
+  .side-nav.is-open {
+    overflow: hidden;
+  }
+
   &__pages {
     font-weight: 500;
     font-size: 40px;
@@ -286,7 +295,7 @@
 .menu-button {
   width: 40px;
   height: 40px;
-
+  overflow-y: scroll;
   top: 0;
   right: 0;
   margin: 0;
@@ -310,7 +319,6 @@
   }
   & .icon-menu {
     display: none;
-    overflow-y: scroll;
   }
 
   &.is-open .icon-menu {
