@@ -183,7 +183,6 @@
     left: 0;
     width: 100%;
     height: 100vh;
-   
 
     padding: 48px 40px;
 
@@ -254,13 +253,19 @@
 
   &__socials {
     display: flex;
-    justify-content: flex-start;
+    align-items: baseline;
+
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   &__invet {
+    padding-right: 10px;
+    &:not(:first-child) {
+      padding-left: 10px;
+    }
+
     color: var(--accent-color);
-    padding: 0px 10px;
   }
   &__invet:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
