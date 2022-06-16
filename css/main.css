@@ -814,11 +814,21 @@ p {
   }
 }
 
+.contacts__icon--phone, .contacts__icon--mail {
+  fill: currentColor;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__icon--phone, .contacts__icon--mail {
+    margin-right: 10px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .contacts__icon--mail {
     width: 14px;
     height: 10px;
-    margin-right: 8px;
   }
 }
 
@@ -826,16 +836,7 @@ p {
   .contacts__icon--phone {
     width: 10px;
     height: 14px;
-    margin-right: 8px;
   }
-}
-
-.contacts__icon--phone, .contacts__icon--mail {
-  margin-right: 10px;
-}
-
-.fill {
-  fill: currentColor;
 }
 
 .contacts__top-link,

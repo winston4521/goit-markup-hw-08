@@ -144,28 +144,27 @@
       align-items: center;
     }
   }
+  &__icon--phone,
+  &__icon--mail {
+    fill: currentColor;
+    margin-right: 8px;
+
+    @include media(desktop) {
+      margin-right: 10px;
+    }
+  }
   &__icon--mail {
     @include media(tablet-only) {
       width: 14px;
       height: 10px;
-      margin-right: 8px;
     }
   }
   &__icon--phone {
     @include media(tablet-only) {
       width: 10px;
       height: 14px;
-      margin-right: 8px;
     }
   }
-  &__icon--phone,
-  &__icon--mail {
-    margin-right: 10px;
-  }
-}
-
-.fill {
-  fill: currentColor;
 }
 
 .contacts__top-link,
