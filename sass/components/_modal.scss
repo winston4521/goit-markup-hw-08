@@ -30,11 +30,12 @@
 }
 
 .modal {
-  position: relative;
-  padding: 40px;
-
   padding: 40px;
   @include media(max-m) {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
     max-width: 450px;
   }
 
