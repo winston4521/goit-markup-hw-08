@@ -1,6 +1,9 @@
 .our-work {
-  @include media(desktop-only) {
+  @include media(max-t) {
     display: none;
+  }
+
+  @include media(desktop) {
     padding-bottom: 94px;
   }
 }

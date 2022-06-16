@@ -40,17 +40,22 @@
   }
   @include media(desktop) {
     margin-right: 70px;
+    text-align: left;
   }
 }
 
 .main-address {
-  align-items: center;
+  text-align: center;
   margin-top: 20px;
 
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--bot-contact-rgb);
+
+  @include media(desktop) {
+    text-align: left;
+  }
 
   &__street {
     color: rgba(255, 255, 255, 1);
