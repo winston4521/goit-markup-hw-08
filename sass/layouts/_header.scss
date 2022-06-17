@@ -34,11 +34,14 @@
 
 // ========HEAD NAV========
 
+.head-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .head-nav {
   @include media(max-m) {
-    display: flex;
-    flex-direction: column;
-
     position: fixed;
     z-index: 2;
 
@@ -159,6 +162,7 @@
 .contacts {
   @include media(max-m) {
     margin-bottom: 64px;
+    margin-top: auto;
   }
 
   @include media(tablet-only) {
@@ -185,7 +189,7 @@
   }
 
   &__top-link {
-    display: inline-block;
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
