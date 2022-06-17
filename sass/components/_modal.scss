@@ -9,7 +9,7 @@
   height: 100%;
 
   @include media(max-m) {
-    padding: 93px 15px;
+    padding-top: 94px;
   }
 
   @include media(tablet-only) {
@@ -31,11 +31,12 @@
 
 .modal {
   padding: 40px;
+  width: 450px;
   @include media(max-m) {
     position: absolute;
-    top: 20%;
-    left: 20%;
-
+    top: 50%;
+    left: 50%;
+    width: calc(100% - 30px);
     max-width: 450px;
   }
 
@@ -55,18 +56,13 @@
     @include transitionCubic(transform);
   }
 
-  // @include media(max-t) {
-  //   transform: translate(-50px, -50px);
-  //   max-width: 450px;
-  // }
-
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  // transform: translate(-50%, -50%) scale(1);
-  // @include transitionCubic(transform);
+  transform: translate(-50%, -50%) scale(1);
+  @include transitionCubic(transform);
 }
 
 .btn-modal {

@@ -85,9 +85,14 @@
 // footter socials
 
 .social-block {
-  @include media(mobile);
   margin-bottom: 60px;
   text-align: center;
+
+  @include media(desktop) {
+    text-align: left;
+  }
+
+  @include media(desktop);
 
   &__title {
     font-size: 14px;
