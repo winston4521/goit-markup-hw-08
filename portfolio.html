@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    
     <!-- Header -->
     <header class="header">
       <div class="container header-section">
@@ -31,7 +30,7 @@
             type="button"
             class="menu-button is-open"
             aria-expanded="false"
-            aria-controls="menu-container"
+            aria-controls="head-nav"
             data-menu-button
           >
             <svg
@@ -51,18 +50,18 @@
             </svg>
           </button>
 
-         
-          
-            <!-- HEAD NAV -->
-            <div class="head-nav" id="menu-container" data-menu>
-              
+          <!-- HEAD NAV -->
+          <div class="head-nav" id="head-nav" data-menu>
+            <div class="head-nav__wrapper">
               <nav class="head-nav__pages">
                 <ul class="head-nav__list">
                   <li class="head-nav__item">
-                    <a class="head-nav__link head-nav__link--current" href="./index.html">Студия</a>
+                    <a class="head-nav__link" href="./index.html">Студия</a>
                   </li>
                   <li class="head-nav__item">
-                    <a class="head-nav__link" href="./portfolio.html">Портфолио</a>
+                    <a class="head-nav__link head-nav__link--current" href="./portfolio.html"
+                      >Портфолио</a
+                    >
                   </li>
                   <li class="head-nav__item">
                     <a class="head-nav__link" href="./portfolio.html">Контакти</a>
@@ -88,6 +87,7 @@
                   </a>
                 </li>
               </ul>
+
               <ul class="head-nav__socials">
                 <li class="head-nav__invet">
                   <a href="" class="head-nav__social--link">Instagram</a>
