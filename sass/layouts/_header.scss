@@ -51,18 +51,24 @@
   @include media(max-m) {
     position: fixed;
     z-index: 2;
-
+    overflow-y: scroll;
     top: 0;
     right: 0;
+    transform: translate(-578px, -0px);
+
+    @include transitionCubic(transform);
+
     padding: 48px 40px;
-    display: none;
 
     width: 100vw;
     height: 100vh;
     background-color: var(--white-color);
 
     &.is-open {
-      display: block;
+      overflow: hidden;
+
+      transform: translate(0px, 0px);
+      @include transitionCubic(transform);
     }
   }
 
